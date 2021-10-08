@@ -56,7 +56,7 @@ function gamePlay() {
 			if (squares[i].classList.contains('fruit')) {
 				if (squares[i + 11] == undefined) {
 					isAlive = checkHearts(livesLeft)
-				
+					squares[i].className="game__board-square"
 					if (isAlive == false) {
 						lives[livesLeft].classList.add('lostHeart')
 						break
