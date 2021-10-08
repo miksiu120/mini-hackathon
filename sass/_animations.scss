@@ -1,0 +1,80 @@
+@keyframes showFromDown {
+	0% {
+		opacity: 0;
+		bottom: 0;
+		top: 0;
+	}
+	40% {
+		opacity: 0.2
+	}
+	50% {
+		opacity: 1;
+		bottom: -50%;
+		top: 50%;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		z-index: 201;
+		opacity: 1;
+		bottom: -0%;
+		top: -0%;
+	}
+}
+@keyframes hideFromUp {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(-35%);
+		opacity: 1;
+	}
+	90% {
+		opacity: 0.9;
+	}
+	100% {
+		transform: translateY(0);
+
+		opacity: 1;
+	}
+}
+
+@keyframes windy {
+	0% {
+		transform: translateY(0) translateX(-50%);
+	}
+	33% {
+		transform: translateY(-20%) translateX(-50%);
+	}
+	77% {
+		transform: translateY(20%) translateX(-50%);
+	}
+	100% {
+		transform: translate(0%) translateX(-50%);
+	}
+}
+
+.move{
+
+
+transform: translate(0);
+
+}
+.moveBack{
+	transform: translate(100%);
+}
+@keyframes goDown{
+	0%{
+		opacity: 1;
+		transform: translateY(0) translateX(-50%);
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(30%) translateX(-50%);
+	}
+}
+.goDown-class{
+	animation: goDown 0.3s ease-in-out forwards;
+}

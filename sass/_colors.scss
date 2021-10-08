@@ -1,0 +1,17 @@
+$main-color: #1bbe28;
+$main-color-darker: #0e5214e1;
+$sad-color: rgb(44, 84, 98);
+$sad-color2: #69868f;
+$white-color: #dedede;
+$dark-color: #232329;
+@mixin dark-colorGradient {
+	background-color: #2b4162;
+background-image: linear-gradient(315deg, #0a1d3a 0%, $dark-color 74%);
+}
+@mixin happy-colorGradient {
+	background-color: #2b4162;
+background-image: linear-gradient(300deg, $main-color 32%, $sad-color2 75%);
+}
+
+
+$important-color:#c71a1a;

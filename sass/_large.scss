@@ -1,0 +1,106 @@
+@media (min-width: 996px) {
+	.section-title {
+		font-size: 3.5rem;
+	}
+	.nav {
+		padding: 2.5em;
+		justify-content: space-evenly;
+		&__burger {
+			display: none;
+		}
+		&__menu {
+			display: block;
+		}
+	}
+	.mobileNav {
+		display: none;
+	}
+	.header {
+		&__img {
+			background-image: url('../img/background/dolomites-g18009b519_1920.jpg');
+			&__text {
+				font-size: 2.7rem;
+				
+			}
+		}
+	}
+	.main {
+
+		.pollution{
+			&__box{
+				p{
+					font-size: 1.9rem;
+				}
+			}
+		}
+
+		.tidbits {
+			background-image: url(../img/background/treeBig.jpg);
+
+			&__tidbit {
+				top: 35%;
+				font-size: 3rem;
+			}
+			&--btn {
+				width: 25%;
+			}
+		}
+
+		.segregation {
+            margin: 3em auto;
+			&__boxes {
+                gap: 3.5em;
+            }
+			&__text {
+				
+				padding: 1.5em 1em 1.5em 2.5em;
+				h3 {
+					font-size: 2.7rem;
+				}
+				ul {
+					padding: 0.3em 1em;
+					font-size: 1.7rem;
+
+					li {
+						margin: 0.3em 0.2em;
+					}
+				}
+			}
+			&__prosAndCons{
+				flex-direction: row;
+				h4{
+					font-size: 1.8rem;
+				}
+				
+			}
+		}
+		.game {
+			&__box {
+				
+				flex-direction: row;
+				justify-content:space-around;
+				&-img {
+					margin-left: 3.5rem;
+				}
+				&-text {
+					min-height: 50%;
+					
+					h2 {
+						font-size: 4.5rem;
+						padding: 0.5em 0;
+					}	
+					p{
+						font-size: 2.8rem;
+						padding: 0.2em 0;
+					}
+
+				}
+				&-btn {
+					margin: 1.5em 0;
+					padding: 0.5em 1em;
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}

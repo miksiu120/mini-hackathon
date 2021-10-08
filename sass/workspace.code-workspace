@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\kursCZ3\\stroneczka"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "KONKURS"
+	}
+}
