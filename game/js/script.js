@@ -54,9 +54,9 @@ function gamePlay() {
 	if (isAlive == true) {
 		for (let i = squares.length - 1; i >= 0; i--) {
 			if (squares[i].classList.contains('fruit')) {
-				if (squares[i + 11] === undefined) {
+				if (squares[i + 11] == undefined) {
 					isAlive = checkHearts(livesLeft)
-					squares[i].className = 'game__board-square'
+				
 					if (isAlive == false) {
 						lives[livesLeft].classList.add('lostHeart')
 						break
@@ -98,6 +98,7 @@ function arrowLeft() {
 let arrowRight = function () {
 	if (isAlive == true) {
 		if (actualBinPosition != 164) {
+			squares[actualBinPosition+1].className="game__board-square"
 			squares[actualBinPosition].classList.remove('bin')
 			actualBinPosition++
 			squares[actualBinPosition].classList.add('bin')
